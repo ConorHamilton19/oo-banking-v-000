@@ -13,7 +13,7 @@ class BankAccount
   end
   
   def display_balance
-    "Your balance is #{@balance}." 
+    "Your balance is $#{@balance}." 
   end 
   
   def valid?
@@ -24,6 +24,8 @@ class BankAccount
       false
     end 
   end
+  
+  def close_account
     
 
 end
