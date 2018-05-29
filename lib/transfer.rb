@@ -29,8 +29,7 @@ class Transfer
     sender.deposit(amount)
     receiver.take_out(amount)
     @status = "reversed"
-  else 
-    nil
+ 
   end
   end 
       
