@@ -15,9 +15,9 @@ class Transfer
   end 
   
   def execute_transaction
-    if sender.valid? == false  
+    if sender.valid?   
       "Transaction rejected. Please check your account balance."
-    elsif 
+    else
       sender.take_out(amount)
       receiver.deposit(amount)
       @status = "complete"
