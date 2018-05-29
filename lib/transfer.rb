@@ -19,9 +19,7 @@ class Transfer
       "Transaction rejected. Please check your account balance."
     elsif 
       sender.take_out(amount)
-      sender.balance
       receiver.deposit(amount)
-      receiver.balance
       @status = "complete"
  
     end
