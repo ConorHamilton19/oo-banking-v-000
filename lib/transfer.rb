@@ -20,9 +20,10 @@ class Transfer
       receiver.deposit(amount)
       @status = "complete"
     else
-    return "Transaction rejected"
- 
+    "Transaction rejected"
     end
   end
+  
+  def reverse_transfer
       
 end
